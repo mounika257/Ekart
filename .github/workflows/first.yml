@@ -38,6 +38,6 @@ jobs:
                mvn sonar:sonar \
                -Dsonar.host.url=$SONAR_HOST_URL \
                -Dsonar.login=$SONAR_TOKEN
-               -Dsonar.organization=mounika257 \
-               -Dsonar.projectKey=shopping-cart
+               -Dsonar.organization=mounika257-1 \
+               -Dsonar.projectKey=mounika257_Ekart
               
