@@ -23,9 +23,8 @@ jobs:
                 SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
                 SONAR_HOST_URL: 'https://sonarcloud.io'
               run: |
-               mvn sonar:sonar \
+               mvn mvn clean verify sonar:sonar \
                -Dsonar.host.url=$SONAR_HOST_URL \
                -Dsonar.login=$SONAR_TOKEN \
                -Dsonar.organization=mounika257 \
-               -Dsonar.projectKey=mounika257_Ekart
-               
+               -Dsonar.projectKey=mounika257-1
